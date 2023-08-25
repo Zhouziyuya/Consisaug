@@ -1,0 +1,24 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: /mnt/sda/zhouziyu/renji/data_processed/data_all/  # dataset root dir
+# path: /mnt/sda/zhouziyu/renji/data_processed/data_abnormal/  # dataset root dir
+# path: /mnt/sda/zhouziyu/renji/data_processed/patient_level_3type_all/
+# path: /mnt/sda/zhouziyu/renji/data_processed/deletinfo_patient_level_abnormal/
+# path: /mnt/sda/zhouziyu/renji/merge_data/label1_09-01_3type/
+# path: /mnt/sda/zhouziyu/renji/merge_data/label1_09-01_09-17_3type/
+# path: /mnt/sda/zhouziyu/renji/merge_data/label1_09-01_09-17_pkg04_3type/
+path: /mnt/sda/zhouziyu/renji/merge_data/label1_09-01_09-17_pkg04_3type_iter
+train: images/train  # train images (relative to 'path') 128 images
+val: images/val  # val images (relative to 'path') 128 images
+test:  images/test # test images (optional)
+
+# Classes
+# nc: 4  # number of classes
+# # names: ['息肉', '溃疡', '糜烂', '肿瘤'] # class names
+# names: ['Poly', 'Ulcer', 'Erosion', 'Tumour']
+
+nc: 3  # number of classes
+names: ['Polyp', 'Ulcer', 'Erosion']
+
+# nc: 1  # number of classes
+# # # names: ['息肉', '溃疡', '糜烂', '肿瘤'] # class names
+# names: ['Poly']

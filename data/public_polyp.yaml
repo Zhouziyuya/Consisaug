@@ -1,0 +1,20 @@
+
+# path: /mnt/sda/zhouziyu/renji/data_processed/public_polyp_videolevel_positive
+path: /mnt/sda/zhouziyu/renji/data_processed/public_polyp_videolevel_positive_AllforTest # 测试LDPolypVideo的所有数据
+# path: /mnt/sda/zhouziyu/renji/public_polyp/ColonDB
+# path: /mnt/sda/zhouziyu/renji/public_polyp/ClinicDB
+# path: /mnt/sda/zhouziyu/renji/public_polyp/Kvasir-SEG
+# path: /mnt/sda/zhouziyu/renji/public_polyp/ETIS-Larib
+# path: /mnt/sda/zhouziyu/renji/public_polyp/ColonDB/allimages
+# path: /mnt/sda/zhouziyu/renji/public_polyp/ClinicDB/allimages
+# path: /mnt/sda/zhouziyu/renji/public_polyp/Kvasir-SEG/allimages
+# path: /mnt/sda/zhouziyu/renji/public_polyp/ETIS-Larib/allimages
+train: images/train  # train images (relative to 'path') 128 images
+val: images/val  # val images (relative to 'path') 128 images
+test:  images/test
+
+# nc: 1  # number of classes
+# names: ['Polyp']
+
+nc: 3  # number of classes
+names: ['Polyp', 'Ulcer', 'Erosion']
